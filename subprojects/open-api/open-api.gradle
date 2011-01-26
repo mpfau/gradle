@@ -9,7 +9,7 @@ dependencies {
 
     integTestCompile libraries.slf4j_api
     integTestCompile project(path: ':integTest', configuration: 'integTestCompile')
-    integTestRuntime project(path: ':core', configuration: 'integTestFixturesRuntime')
+    integTestRuntime project(path: ':integTest', configuration: 'integTestFixturesRuntime')
 }
 
 //create a task for running the integration tests
